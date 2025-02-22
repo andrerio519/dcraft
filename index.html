@@ -78,7 +78,9 @@
             </div>
     
             <div class="service-card">
-                <i class="fas fa-box-open service-icon"></i>
+                <a href="parcel.html" target="_blank">
+                    <i class="fas fa-box-open service-icon"></i>
+                </a>
                 <h3>Kado & Parcel</h3>
                 <p>Parcel eksklusif dengan kombinasi bunga, coklat, dan hadiah spesial</p>
             </div>
@@ -149,7 +151,17 @@
 
     <section class="contact" id="kontak">
         <h2 class="section-title">Hubungi Kami</h2>
+        
         <div class="address">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.680531439157!2d117.148123!3d-0.502735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0x0%3A0x0!2zMMKwMzAnMDkuOCJTIDExN8KwMDgnNDUuMyJF!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                </iframe>
+            </div>
             <p>📍 Alamat: Jl. Contoh No. 123, Samarinda</p>
             <p>📞 Telepon: <a href="tel:+6285822012709">+62 858-2201-2709</a></p>
             <div class="social-links">
@@ -159,6 +171,7 @@
                         class="fab fa-tiktok"></i></a>
             </div>
         </div>
+        
     </section>
     <div class="tiktok-vid">
         <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@sunitadewi6/video/7412603365755997445"
@@ -192,6 +205,41 @@
                     asli - D&#39;crafter</a> </section>
         </blockquote>
     </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 D'craft Florist & Decoration</p>
+            <p>Jl. Contoh No. 123, Samarinda - Kalimantan Timur</p>
+            <div class="footer-links">
+                <a href="#syarat">Syarat & Ketentuan</a> | 
+                <a href="#kebijakan">Kebijakan Privasi</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Tambahkan sebelum </body> -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h3 id="productTitle"></h3>
+        <form id="orderForm">
+            <div class="form-group">
+                <label>Jumlah:</label>
+                <input type="number" min="1" value="1" required>
+            </div>
+            <div class="form-group">
+                <label>Ukuran:</label>
+                <select>
+                    <option>Kecil</option>
+                    <option>Medium</option>
+                    <option>Besar</option>
+                </select>
+            </div>
+            <button type="button" onclick="sendWhatsAppOrder()">Pesan via WhatsApp</button>
+        </form>
+    </div>
+</div>
+<button id="backToTop" title="Kembali ke atas">
+    <i class="fas fa-arrow-up"></i>
+</button>
     <script async src="https://www.tiktok.com/embed.js"></script>
     <script src="script.js"></script>
 </body>

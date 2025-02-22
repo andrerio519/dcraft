@@ -7,6 +7,48 @@
      hamburger.classList.toggle('active');
  });
 
+// Modal Handler
+const modal = document.getElementById('productModal');
+const spans = document.getElementsByClassName("close")[0];
+
+document.querySelectorAll('.service-card').forEach(card => {
+    card.addEventListener('click', () => {
+        const title = card.querySelector('h3').innerText;
+        document.getElementById('productTitle').innerText = title;
+        modal.style.display = "block";
+    });
+});
+
+spans.onclick = () => modal.style.display = "none";
+
+// Back to Top
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("backToTop").style.display = "block";
+    } else {
+        document.getElementById("backToTop").style.display = "none";
+    }
+};
+
+document.getElementById("backToTop").onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+};
+
+// WhatsApp Order
+function sendWhatsAppOrder() {
+    const product = document.getElementById('productTitle').innerText;
+    const jumlah = document.querySelector('#orderForm input').value;
+    const ukuran = document.querySelector('#orderForm select').value;
+    
+    const message = `Halo D'craft, saya ingin memesan:
+Produk: ${product}
+Jumlah: ${jumlah}
+Ukuran: ${ukuran}
+Alamat pengiriman: [isi alamat lengkap]`;
+    
+    window.open(`https://wa.me/6285822012709?text=${encodeURIComponent(message)}`, '_blank');
+}
+
  // Smooth Scroll
  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
      anchor.addEventListener('click', function (e) {

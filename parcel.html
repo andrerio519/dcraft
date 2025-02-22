@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>andreriotech Parcel - Demo</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="parcel.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="brand">
+          <h2>Rio Parcel</h2>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#layanan">Service</a></li>
+          <li><a href="#products">Product</a></li>
+          <li><a href="#galeri">Galeri</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontak">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" id="home">
+      <h2 style="font-size: 2.5rem; margin-bottom: 1rem">
+        Ini adalah contoh Website Parcel
+      </h2>
+      <a href="https://wa.me/6281649113708" class="whatsapp-btn">
+        <i class="fab fa-whatsapp"></i> Pesan Sekarang
+      </a>
+    </section>
+
+    <section class="services" id="layanan">
+        <h2 class="section-title">Jenis Layanan Parcel</h2>
+        <div class="service-grid">
+            <!-- Parcel Corporate -->
+            <div class="service-card">
+                <div class="service-badge">Best Seller!</div>
+                <i class="fas fa-briefcase service-icon"></i>
+                <h3>Parcel Corporate</h3>
+                <p>
+                    Hadiah profesional untuk klien bisnis, berisi produk premium & merchandise eksklusif perusahaan
+                </p>
+            </div>
+    
+            <!-- Parcel Pernikahan -->
+            <div class="service-card">
+                <div class="service-badge">New!</div>
+                <i class="fas fa-ring service-icon"></i>
+                <h3>Parcel Pernikahan</h3>
+                <p>
+                    Parcel elegan dengan dekorasi pita satin dan bunga segar untuk souvenir pernikahan
+                </p>
+            </div>
+    
+            <!-- Parcel Lebaran -->
+            <div class="service-card">
+                <i class="fas fa-moon service-icon"></i>
+                <h3>Parcel Lebaran</h3>
+                <p>
+                    Paket spesial Idul Fitri berisi kurma premium, kue kering, dan cenderamata bernuansa ketupat
+                </p>
+            </div>
+    
+            <!-- Parcel Baby Shower -->
+            <div class="service-card">
+                <i class="fas fa-baby-carriage service-icon"></i>
+                <h3>Parcel Baby Shower</h3>
+                <p>
+                    Bingkisan lucu berisi perlengkapan bayi dengan tema karakter dan aksesoris menggemaskan
+                </p>
+            </div>
+    
+            <!-- Parcel Kesehatan -->
+            <div class="service-card">
+                <i class="fas fa-heartbeat service-icon"></i>
+                <h3>Parcel Get Well Soon</h3>
+                <p>
+                    Paket penyemangat berisi vitamin, buah segar, dan herbal tradisional untuk yang sedang sakit
+                </p>
+            </div>
+    
+            <!-- Parcel Natal -->
+            <div class="service-card">
+                <div class="service-badge">Seasonal</div>
+                <i class="fas fa-candy-cane service-icon"></i>
+                <h3>Parcel Natal</h3>
+                <p>
+                    Bingkisan spesial hari raya dengan dekorasi pohon natal dan cokelat premium bertema natal
+                </p>
+            </div>
+    
+            <!-- Parcel Custom -->
+            <div class="service-card">
+                <div class="service-badge">Custom Order</div>
+                <i class="fas fa-palette service-icon"></i>
+                <h3>Parcel Custom</h3>
+                <p>
+                    Desain parcel sesuai permintaan dengan konsep unik dan personalisasi nama penerima
+                </p>
+            </div>
+    
+            <!-- Parcel Eco-Friendly -->
+            <div class="service-card">
+                <div class="service-badge">Eco Series</div>
+                <i class="fas fa-leaf service-icon"></i>
+                <h3>Parcel Ramah Lingkungan</h3>
+                <p>
+                    Paket zero-waste menggunakan material daur ulang dan isi produk organik lokal
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="products" id="products">
+        <h2 class="section-title">Katalog Parcel</h2>
+        <div class="product-grid">
+            <!-- Parcel Kesatu -->
+            <div class="product-card" 
+                 data-product-name="Parcel Kesatu" 
+                 data-product-price="Rp 150.000 - 350.000"
+                 data-product-images='["/assets/img/parcel1.jpg","/assets/img/parcel2.jpg","/assets/img/parcel3.jpg"]'>
+                <img src="/assets/img/parcel1.jpg" alt="Parcel Kesatu" class="product-image">
+                <h3>Parcel Kesatu</h3>
+                <div class="product-info">
+                    <p>🕒 Pengerjaan 1-2 hari</p>
+                    <p>📦 Ukuran Tersedia: S/M/L</p>
+                    <button class="view-details">Pilih Varian</button>
+                </div>
+            </div>
+    
+            <!-- Parcel Kedua -->
+            <div class="product-card" 
+                 data-product-name="Parcel Kedua" 
+                 data-product-price="Rp 100.000 - 250.000"
+                 data-product-images='["/assets/img/tower1.jpg","/assets/img/tower2.jpg"]'>
+                <img src="/assets/img/tower1.jpg" alt="Parcel Kedua" class="product-image">
+                <h3>Parcel Kedua</h3>
+                <div class="product-info">
+                    <p>🕒 Ready Stock</p>
+                    <p>📦 Tinggi 50cm-120cm</p>
+                    <button class="view-details">Pilih Varian</button>
+                </div>
+            </div>
+    
+            <!-- Parcel Ketiga -->
+            <div class="product-card" 
+                 data-product-name="Parcel Ketiga" 
+                 data-product-price="Rp 200.000 - 500.000"
+                 data-product-images='["/assets/img/bucket1.jpg","/assets/img/bucket2.jpg","/assets/img/bucket3.jpg"]'>
+                <img src="/assets/img/bucket1.jpg" alt="Parcel Ketiga" class="product-image">
+                <h3>Parcel Ketiga</h3>
+                <div class="product-info">
+                    <p>🕒 Pengerjaan 3-5 hari</p>
+                    <p>💵 Min. Nominal Rp 500.000</p>
+                    <button class="view-details">Pilih Varian</button>
+                </div>
+            </div>
+    
+            
+        </div>
+    </section>
+    
+    <!-- Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-gallery">
+                <div class="main-image">
+                    <img id="mainProductImage" src="" alt="Main Product Image">
+                </div>
+                <div class="thumbnail-container"></div>
+            </div>
+            <div class="product-details">
+                <h3 id="productTitle"></h3>
+                <p id="productPrice"></p>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label>Jumlah:</label>
+                        <input type="number" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Ukuran:</label>
+                        <select>
+                            <option>Small (30x30cm)</option>
+                            <option>Medium (40x40cm)</option>
+                            <option>Large (50x50cm)</option>
+                        </select>
+                    </div>
+                    <button type="button" class="whatsapp-order">
+                        <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section class="gallery animate-fade-in" id="galeri">
+      <h2 class="section-title">Galeri Parcel</h2>
+      <div class="gallery-grid">
+        <div
+          class="gallery-item"
+          style="background-image: url('/assets/img/parcel1.jpg')"
+        ></div>
+        <div
+          class="gallery-item"
+          style="background-image: url('/assets/img/parcel2.jpg')"
+        ></div>
+        <div
+          class="gallery-item"
+          style="background-image: url('/assets/img/parcel3.jpg')"
+        ></div>
+        <div
+          class="gallery-item"
+          style="background-image: url('/assets/img/ parcel4.jpg')"
+        ></div>
+      </div>
+    </section>
+
+    <section class="parallax">
+      <div class="parallax-content animate-fade-in">
+        <h2>Kualitas Premium • Desain Eksklusif</h2>
+        <p>Percayakan parcel spesialmu kepada kami</p>
+        <a
+          href="https://wa.me/6281649113708"
+          class="whatsapp-btn"
+          style="margin-top: 1.5rem"
+        >
+          <i class="fab fa-whatsapp"></i> Konsultasi Gratis
+        </a>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <h2 class="section-title">Pertanyaan Umum</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Berapa lama waktu pembuatan parcel?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Waktu pengerjaan bervariasi antara 1-3 hari tergantung jenis
+              parcel dan ketersediaan bahan. Untuk parcel custom mungkin
+              membutuhkan waktu lebih lama.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Apakah bisa pesan mendadak/h-1?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Kami menerima pesanan mendadak dengan tambahan biaya express 30%.
+              Silakan hubungi kami via WhatsApp untuk konfirmasi ketersediaan.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Bagaimana sistem pembayarannya?</h3>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+          <div class="faq-answer">
+            <p>
+              Pembayaran dilakukan melalui transfer bank (50% DP saat pemesanan,
+              50% sebelum pengiriman). Kami juga menerima pembayaran tunai saat
+              pickup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontak">
+      <h2 class="section-title">Hubungi Kami</h2>
+      <div class="address">
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.680531439157!2d117.148123!3d-0.502735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0x0%3A0x0!2zMMKwMzAnMDkuOCJTIDExN8KwMDgnNDUuMyJF!5e0!3m2!1sen!2sid!4v1620000000000!5m2!1sen!2sid"
+            width="600"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+        <p>📍 Alamat: Jl. Contoh No. 123, Samarinda</p>
+        <p>📞 Telepon: <a href="tel:+6281649113708">+62 858-2201-2709</a></p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/alya_rizk_23" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/syifad2" target="_blank"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.tiktok.com/@sunitadewi6?is_from_webapp=1&sender_device=pc"
+            target="_blank"
+            ><i class="fab fa-tiktok"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <div class="tiktok-vid">
+      <blockquote
+        class="tiktok-embed"
+        cite="https://www.tiktok.com/@sunitadewi6/video/7412603365755997445"
+        data-video-id="7412603365755997445"
+        style="max-width: 605px; min-width: 325px"
+      >
+        <section>
+          <a
+            target="_blank"
+            title="@sunitadewi6"
+            href="https://www.tiktok.com/@sunitadewi6?refer=embed"
+            >@sunitadewi6</a
+          >
+          parcel bunga dan snack order inbox
+          <a
+            title="parcel"
+            target="_blank"
+            href="https://www.tiktok.com/tag/parcel?refer=embed"
+            >#parcel</a
+          >
+          <a
+            title="handmade"
+            target="_blank"
+            href="https://www.tiktok.com/tag/handmade ?refer=embed"
+            >#handmade</a
+          >
+          <a
+            title="gift"
+            target="_blank"
+            href="https://www.tiktok.com/tag/gift?refer=embed"
+            >#gift</a
+          >
+          <a
+            title="special"
+            target="_blank"
+            href="https://www.tiktok.com/tag/special?refer=embed"
+            >#special</a
+          >
+          <a
+            title="celebration"
+            target="_blank"
+            href="https://www.tiktok.com/tag/celebration?refer=embed"
+            >#celebration</a
+          >
+          <a
+            target="_blank"
+            title="♬ Music - Artist"
+            href="https://www.tiktok.com/music/Music-Artist?refer=embed"
+            >♬ Music - Artist</a
+          >
+        </section>
+      </blockquote>
+      <blockquote
+        class="tiktok-embed"
+        cite="https://www.tiktok.com/@sunitadewi6/video/7423243528379174151"
+        data-video-id="7423243528379174151"
+        style="max-width: 605px; min-width: 325px"
+      >
+        <section>
+          <a
+            target="_blank"
+            title="@sunitadewi6"
+            href="https://www.tiktok.com/@sunitadewi6?refer=embed"
+            >@sunitadewi6</a
+          >
+          Parcel coklat dan bunga 💐💐💐
+          <a
+            title="parcel"
+            target="_blank"
+            href="https://www.tiktok.com/tag/parcel?refer=embed"
+            >#parcel</a
+          >
+          <a
+            title="chocolate"
+            target="_blank"
+            href="https://www.tiktok.com/tag/chocolate?refer=embed"
+            >#chocolate</a
+          >
+          <a
+            title="foryou"
+            target="_blank"
+            href="https://www.tiktok.com/tag/foryou?refer=embed"
+            >#foryou</a
+          >
+          <a
+            title="samarinda"
+            target="_blank"
+            href="https://www.tiktok.com/tag/samarinda?refer=embed"
+            >#samarinda</a
+          >
+          <a
+            title="xyzbca"
+            target="_blank"
+            href="https://www.tiktok.com/tag/xyzbca?refer=embed"
+            >#xyzbca</a
+          >
+          <a
+            target="_blank"
+            title="♬ suara asli  - D'crafter"
+            href="https://www.tiktok.com/music/suara-asli-D'crafter-7423243579131759377?refer=embed"
+            >♬ suara asli - D'crafter</a
+          >
+        </section>
+      </blockquote>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Kontak Kami</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Jl. Contoh No. 123, Samarinda
+          </p>
+          <p><i class="fas fa-phone"></i> +62 858-2201-2709</p>
+        </div>
+        <div class="footer-section">
+          <h3>Jam Operasional</h3>
+          <p>Senin - Sabtu: 08.00 - 17.00 WITA</p>
+          <p>Minggu: Tutup</p>
+        </div>
+        <div class="footer-section">
+          <h3>Follow Kami</h3>
+          <div class="social-links-footer">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 andreriotech. All rights reserved</p>
+      </div>
+    </footer>
+    
+    <button id="backToTop" title="Kembali ke atas">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+    <script src="parcel.js"></script>
+  </body>
+</html>
