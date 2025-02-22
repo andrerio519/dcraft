@@ -78,7 +78,7 @@ body {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("assets/img/aneka2.png") center/cover;
+    url("dcraft/assets/img/aneka2.png") center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -293,7 +293,7 @@ body {
 
 /* Parallax */
 .parallax {
-  background: url("assets/img/anekaparcel.jpeg") fixed center/cover;
+  background: url("dcraft/assets/img/anekaparcel.jpeg") fixed center/cover;
   min-height: 500px;
   display: flex;
   align-items: center;
